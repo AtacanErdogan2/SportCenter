@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    padding: 0px 250px 0px 250px;
+}
+
+.hero-container {
+    background-image: url("/assets/hero-man.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding: 0px 250px 0px 250px;;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0; 
+}
+
+.logo img {
+    height: 80%;
+    width: 80%;
+}
+
+nav .link {
+    flex:1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .link a {
+    text-decoration: none;
+    color: white;
+    margin-left: 2em;
+    transition: color 0.3s ease;
+}
+
+.link a:not(.nav-btn):hover {
+    color: #F79A01;
+}
+
+.nav-btn {
+    background-color: #F79A01;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 15px;
+}
+
+.nav-btn:hover {
+    color: #F79A01 !important;
+    background-color: #F1F8FF;
+}
+
+.brand {
+    background-color: #325490;
+    display: inline-block;
+    padding: 3px 13px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5em;
+    display: block;
+    white-space: pre-line;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hero-article {
+    padding-top: 120px;
+}
+
+.hero-article .explanation {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+.signUp-btn {
+    background-color: #325490;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.signUp-btn:hover {
+    background-color: white;
+    color: #325490;
+}
+
+.details-btn {
+    padding: 5px 15px;
+    border-radius: 3px;
+    border-style: groove;
+    border-width: 1.5px;
+    border-color: white;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.statistics-container {
+    background-color: #F1F8FF;
+}
+
+.statistic-info {
+    width: 200px;
+    height: 90px;
+    background-color: white;
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.statistic-value {
+    color: #325490;
+}
+
+.statistic-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.scroll {
+    display: flex;
+     /* Navbar'ı ekranın sağ ve sol kenarlarına yerleştirir */
+    align-items: center;
+    padding: 20px; /* İstediğiniz boşluğa göre ayarlayabilirsiniz */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ekran genişliği kadar yayılmasını sağlar */
+    background-color: rgba(0, 0, 0, 0.5); /* Navbar arka plan rengi (örneğin, %50 saydamlıkta siyah) */
+    color: white;
+}
+
