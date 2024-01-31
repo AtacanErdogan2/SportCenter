@@ -90,6 +90,42 @@ featuresButtonsDOM.forEach(function (item) {
 function calculateBMI() {
   var height = document.getElementById('cm').value;
   var weight = document.getElementById('kg').value;
-  var bmi = (weight / ((height/100) * (height/100))).toFixed(2);
+  var indicator = document.querySelector('.bmi-indicator');
  
+  var bmi = (weight / ((height/100) * (height/100))).toFixed(1);
+  //0-40
+  if(bmi>40){
+    bmi=40;
+  }else if (bmi<0){
+    bmi=0;
+  }
+  console.log(bmi)
+  //min 7 
+  //max 87.5
+  switch (true){
+    case(bmi<18.5):
+    indicator.style.left=`${(bmi*(15/18.5))+7}%`
+    break;
+    case(bmi<=24.9):
+    indicator.style.left=`${((bmi-18.5)*(15/6.4))+23.5}%`
+    break;
+     case(bmi<=29.9):
+        indicator.style.left=`${((bmi-25)*(15/4.9))+40}%`;
+        break;
+        case(bmi<=34.9):
+        indicator.style.left=`${((bmi-30)*(15/4.9))+56.5}%`;
+        break;
+        case(bmi>34.9):
+        indicator.style.left=`${((bmi-35)*(15/4.9))+73}%`;
+        break;
+
+   }
+
+   console.log(indicator.style.left);
+  //underweight 7-44
+  //normal 44-57
+  //overweight 57-67
+  //obese 67-77
+  //extremely obese 77-87
+
 }

@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sport Center</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -66,37 +67,39 @@
       </div>
     </article>
   </section>
-  
-    <section class="background-backslash center">
 
-      <div class="classes-intro">
-        <h2>OUR CLASSES</h2>
-        <p></p>
-        <p class="explanation">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
-          placeat amet unde iste molestiae tempora ab incidunt corrupti?
-        </p>
-      </div>
+  <section class="background-backslash center">
 
-      <div class="features" id="features">
-        <button data-category="Yoga">Yoga</button>
-        <button data-category="Group">Group</button>
-        <button data-category="Solo">Solo</button>
-        <button data-category="Stretching">Stretching</button>
-      </div>
+    <div class="classes-intro">
+      <h2>OUR CLASSES</h2>
+      <p></p>
+      <p class="explanation">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        placeat amet unde iste molestiae tempora ab incidunt corrupti?
+      </p>
+    </div>
 
-      <div class="classes-content">
+    <div class="features" id="features">
+      <button data-category="Yoga">Yoga</button>
+      <button data-category="Group">Group</button>
+      <button data-category="Solo">Solo</button>
+      <button data-category="Stretching">Stretching</button>
+    </div>
 
-      </div>
-    </section>
-  
+    <div class="classes-content">
+
+    </div>
+  </section>
+
 
   <section class="bmi-section center">
     <article class="bmi-article">
       <h2>BMI Calculator</h2>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-    </p>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old.<br>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old.
+      </p>
       <div class="bmi-calculator">
         <input type="number" name="cm" id="cm" placeholder="Your Height" oninput="calculateBMI()" required>
         <label for="cm">cm</label>
@@ -104,16 +107,113 @@
         <label for="kg">kg</label>
       </div>
     </article>
-   
-    <div class="bmi-figure">
-        <h3>Your BMI</h3>
-        <img src="assets/bmi-index.jpg" alt="">
-        <p class="ref-line"></p>
+
+    <div class="bmi-figure ">
+      <h3>Your BMI</h3>
+      <img src="assets/bmi-index.jpg" alt="">
+      <div class="bmi-indicator"></div>
     </div>
   </section>
 
+  <section class="trainers-section center">
 
-    <script src="js/script.js"></script>
+    <div class="trainers-intro">
+      <h2>OUR BEST TRAINERS</h2>
+      <p></p>
+      <p class="explanation">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        placeat amet unde iste molestiae tempora ab incidunt corrupti?
+      </p>
+    </div>
+
+    <div class="trainers-cards">
+      <div class="trainers-card">
+        <img src="assets/trainer1.jpg" alt="">
+        <div class="trainers-yAxis-frame"></div>
+        <div class="trainers-xAxis-frame"></div>
+        <div class="trainers-name">
+          <h2>Zoe Doe</h2>
+          <p>Yoga Trainer</p>
+        </div>
+      </div>
+      <div class="trainers-card">
+        <img src="assets/trainer2.jpg" alt="">
+        <div class="trainers-yAxis-frame"></div>
+        <div class="trainers-xAxis-frame"></div>
+        <div class="trainers-name">
+          <h2>John Doe</h2>
+          <p>Cardio Trainer</p>
+        </div>
+
+      </div>
+      <div class="trainers-card">
+        <img src="assets/trainer3.jpg" alt="">
+        <div class="trainers-yAxis-frame"></div>
+        <div class="trainers-xAxis-frame"></div>
+        <div class="trainers-name">
+          <h2>Jane Doe</h2>
+          <p>Cardio Trainer</p>
+        </div>
+  </section>
+
+  <section class="purchase-section center">
+    <div class="purchase-intro">
+      <h2>PURCHASE FROM US</h2>
+      <p></p>
+      <p class="explanation">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        placeat amet unde iste molestiae tempora ab incidunt corrupti?
+      </p>
+    </div>
+
+
+    <div class="purchase-cards">
+      <div class="purchase-card">
+        <div class="purchase-card-info">
+          <img src="assets/purchase1.jpg" alt="">
+          <h3>Kettlebell / 5kg</h3>
+          <p><span style="text-decoration: line-through;">89,99$</span> / 59,99$</p>
+          <div  class="add-to-cart"><span class="add-to-cart-figure"><i class="fa-solid fa-cart-shopping"></i></span><p>Add To Cart</p></div>
+          
+        </div>
+      </div>  
+      <div class="purchase-card">
+        <div class="purchase-card-info">
+          <img src="assets/purchase2.jpg" alt="">
+          <h3>Treadmill</h3>
+          <p><span style="text-decoration: line-through;">899,99$</span> / 599,99$</p>
+          <div  class="add-to-cart"><span class="add-to-cart-figure"><i class="fa-solid fa-cart-shopping"></i></span><p>Add To Cart</p></div>
+          
+        </div>
+      </div>
+      <div class="purchase-card">
+        <div class="purchase-card-info">
+          <img src="assets/purchase3.jpg" alt="">
+          <h3>Adjustable Dumbbell</h3>
+          <p><span style="text-decoration: line-through;">89,99$</span> / 59,99$</p>
+          <div  class="add-to-cart"><span class="add-to-cart-figure"><i class="fa-solid fa-cart-shopping"></i></span><p>Add To Cart</p></div>
+          
+        </div>
+      </div>
+      <div class="purchase-card">
+        <div class="purchase-card-info">
+          <img src="assets/purchase4.jpg" alt="">
+          <h3>Kettlebell / 3kg</h3>
+          <p><span style="text-decoration: line-through;">89,99$</span> / 59,99$</p>
+          <div  class="add-to-cart"><span class="add-to-cart-figure"><i class="fa-solid fa-cart-shopping"></i></span><p>Add To Cart</p></div>
+          
+        </div>
+      </div>
+    
+     </div>
+
+  </section>
+
+
+
+  <script src="js/script.js"></script>
 </body>
+
+
 
 </html>
