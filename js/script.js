@@ -121,6 +121,7 @@ function calculateBMI() {
 
    }
 
+
    console.log(indicator.style.left);
   //underweight 7-44
   //normal 44-57
@@ -129,3 +130,7 @@ function calculateBMI() {
   //extremely obese 77-87
 
 }
+
+
+
+ 
