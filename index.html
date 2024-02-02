@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sport Center</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,13 +21,19 @@
           <img src="assets/logo.png" alt="Powerfull Logo" />
         </div>
         <div class="link">
-          <a href="#">Home</a>
-          <a href="#classes">Classes</a>
-          <a href="#trainer">Trainer</a>
-          <a href="#review">Review</a>
-          <a href="#contact">Contact</a>
-          <a href="#" class="nav-btn">JOIN US</a>
+          <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#trainer">Trainer</a></li>
+          <li><a href="#review">Review</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="nav-btn">JOIN US</a></li>
+        </ul>
         </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
       </nav>
       <article class="hero-article">
         <p class="brand">POWERFULL</p>
@@ -40,7 +47,7 @@
           consectetur adipisci? Vel fuga est necessitatibus vitae, tempora
           ducimus cumque!
         </p>
-        <div>
+        <div class="hero-section-buttons">
           <button class="signUp-btn">Sign Up</button>
           <button class="details-btn">Details</button>
         </div>

@@ -81,11 +81,13 @@ featuresButtonsDOM.forEach(function (item) {
       </div>
       </div>
       <div class="classes-content-figure">
-      <img src=${selectedContent.img} alt="" />
+      <img src=${selectedContent.img} alt="" /> 
       </div>
     `;
   });
 });
+
+{/* <img src=${selectedContent.img} alt="" /> */}
 
 function calculateBMI() {
   var height = document.getElementById('cm').value;
@@ -131,6 +133,20 @@ function calculateBMI() {
 
 }
 
+var navBtnDOM = document.querySelector(".checkbtn");
+var navLinkDOM = document.querySelector("nav .link");
+var allNavLinkDOM = document.querySelectorAll("nav .link li a");
 
+navBtnDOM.addEventListener("click", function () {
+  navLinkDOM.classList.toggle("show")
+})
 
+allNavLinkDOM.forEach((tag) => {
+  tag.addEventListener("click",function () {
+    setTimeout (function () {
+      navLinkDOM.classList.toggle("show")
+    },400);
+  })
+});
  
+

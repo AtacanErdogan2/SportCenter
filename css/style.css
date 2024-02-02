@@ -8,7 +8,7 @@
 }
 
 .center {
-    padding: 0px 250px 0px 250px;
+    padding: 0px 250px;
 }
 
 .scroll {
@@ -32,7 +32,7 @@
 }
 
 nav {
-    padding: 0px 250px 0px 250px;
+    padding: 0px 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,15 +43,24 @@ nav {
     right: 0;
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    
+}
+
+#check {
+    display: none;
+}
+
 .logo img {
     height: 80%;
     width: 80%;
 }
-
-
-
-
-
 
 nav .link {
     flex: 1;
@@ -59,7 +68,10 @@ nav .link {
     align-items: center;
     justify-content: center;
 }
-
+nav .link li {
+    list-style: none;
+    display: inline-block;
+}
 nav .link a {
     text-decoration: none;
     color: white;
@@ -221,7 +233,6 @@ h1 {
 .review-intro .explanation,
 .contact-us-intro .explanation {
     padding: 30px 250px;
-
 }
 
 .features {
@@ -277,7 +288,6 @@ h1 {
 .classes-content-figure img {
     width: 390px;
     height: 260px;
-
     margin-top: 60px;
 }
 
