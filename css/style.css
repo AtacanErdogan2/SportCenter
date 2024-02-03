@@ -48,8 +48,9 @@ nav {
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
     cursor: pointer;
+    display: none;
     
 }
 
@@ -500,7 +501,6 @@ h1 {
     left: 20px;
 }
 
-
 .classes-section,
 .trainers-section
 {
@@ -589,8 +589,6 @@ h1 {
     clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
-/*-------------------------*/
-
 .contact-us-content {
     display: flex;
     justify-content: space-between;
@@ -604,8 +602,6 @@ h1 {
 .contact-us-form {
     margin-left: 26px;
 }
-
-
 
 .contact-us-map iframe {
     margin-right: 27px;
@@ -670,8 +666,8 @@ h1 {
 footer {
     background-color: #355592;
 }
+
 .footer-logo img {
-  
     width: 20%;
 }
 
@@ -688,15 +684,13 @@ footer {
     color: white;
 }
 
-
 .footer-sub-section h2{
     font-weight: 500;
 }
+
 .footer-sub-section li {
    list-style: none;
    margin-bottom: 10px;
-   
-   
 }
 
 .footer-sub-section li a {
